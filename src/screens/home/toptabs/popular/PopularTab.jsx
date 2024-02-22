@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const HomeHeader = () => {
+const PopularTab = () => {
   return (
-    <View className="py-3 bg-light-primary h-10">
-      
+    <View>
+      <Text>PopularTab</Text>
     </View>
   )
 }
 
-export default HomeHeader
+export default PopularTab
 
 const styles = StyleSheet.create({})

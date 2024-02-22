@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const HomeHeader = () => {
+const Matches = () => {
   return (
-    <View className="py-3 bg-light-primary h-10">
-      
+    <View>
+      <Text>Matches</Text>
     </View>
   )
 }
 
-export default HomeHeader
+export default Matches
 
 const styles = StyleSheet.create({})

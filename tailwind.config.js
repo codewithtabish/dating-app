@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         light: {
           primary: '#FF6584', // Light pinkish-red for the primary color
-          secondary: '#FFB88C', // Light peach for the secondary color
+          secondary: '#ff93a8', // Light peach for the secondary color
           background: '#F9F5F5', // Light beige for the background
           text: '#333333', // Dark gray for text
         },

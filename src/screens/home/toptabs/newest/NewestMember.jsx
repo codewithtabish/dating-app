@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const HomeHeader = () => {
+const NewestMember = () => {
   return (
-    <View className="py-3 bg-light-primary h-10">
-      
+    <View>
+      <Text>NewestMember</Text>
     </View>
   )
 }
 
-export default HomeHeader
+export default NewestMember
 
 const styles = StyleSheet.create({})
