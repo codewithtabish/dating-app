@@ -1,10 +1,12 @@
-module.exports = function (api) {
+module.exports = function(api) {
   api.cache(true);
-  const plugins = [];
-
   return {
     presets: ['babel-preset-expo'],
-
-    plugins,
+    plugins: ["nativewind/babel","react-native-reanimated/plugin"],
+     env: {
+      production: {
+        plugins: ['react-native-paper/babel'],
+      },
+    },
   };
 };

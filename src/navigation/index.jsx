@@ -1,20 +1,19 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack';
 
 import TabNavigator from './tab-navigator';
 import Modal from '../screens/modal';
 
-export type RootStackParamList = {
-  TabNavigator: undefined;
-  Modal: undefined;
-};
 
-const Stack = createStackNavigator<RootStackParamList>();
+
+const Stack = createStackNavigator();
 
 export default function RootStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="TabNavigator">
+      <Stack.Navigator initialRouteName="TabNavigator"
+      screenOptions={{headerShown:false,
+      cardStyleInterpolator:CardStyleInterpolators.forVerticalIOS}}>
         <Stack.Screen
           name="TabNavigator"
           component={TabNavigator}
