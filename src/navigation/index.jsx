@@ -4,6 +4,7 @@ import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/
 import TabNavigator from './tab-navigator';
 import Modal from '../screens/modal';
 import OnboardingScreen from '~/screens/onBoard/OnBoardScreen';
+import SplashScreen from '~/screens/splah/SplashScreen';
 
 
 
@@ -12,9 +13,10 @@ const Stack = createStackNavigator();
 export default function RootStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Board"
+      <Stack.Navigator initialRouteName="Splah"
       screenOptions={{headerShown:false,
       cardStyleInterpolator:CardStyleInterpolators.forVerticalIOS}}>
+        <Stack.Screen name='Splash' component={SplashScreen} options={{headerShown:false}}/>
         <Stack.Screen name='Board' component={OnboardingScreen}/>
         <Stack.Screen
           name="TabNavigator"
