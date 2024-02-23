@@ -27,7 +27,7 @@ const TopTabNavigator = () => {
 
         tabBarLabelStyle:{fontSize:11,color:"white"},
         iconStyle: { marginRight: 5 },
-         tabBarStyle: { backgroundColor: '#FF6584' },
+         tabBarStyle: { backgroundColor: '#FF6584' ,paddingVertical:10},
         
       }}>
       <Tab.Screen
